@@ -16,9 +16,9 @@ Run `npm i ionic-select-search --save` to install this library.
 After installing this package with `npm i ionic-select-search --save`, import the IonSelectSearchLibModule in your main module(app.module.ts) or your lazy-loaded module.
 Eg: inside home.module.ts:
 
-`    
+```
     import { IonSelectSearchLibModule } from 'ionic-select-search';
-
+    
     @NgModule({
       ...
       imports: [
@@ -26,7 +26,8 @@ Eg: inside home.module.ts:
       ],
      ...
     })
-    export class HomeModule { }`
+    export class HomeModule { }
+```
 
 ## Enable searching in `<ion-select>`
 
@@ -37,7 +38,7 @@ Note:`Currently interface are not supported. Work on "popover" and "action-sheet
 Example: 
 Inside your .html file
 ```html 
-<ion-select idlDefault [(ngModel)]="myCategory">
+<ion-select idlDefault searchPlaceholder="Type to search" [(ngModel)]="myCategory">
     <ion-select-option value="1">Fruits</ion-select-option>
     <ion-select-option value="2">Vegies</ion-select-option>
     <ion-select-option value="3">Drinks</ion-select-option>
