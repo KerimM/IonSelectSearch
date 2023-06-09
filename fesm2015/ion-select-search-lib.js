@@ -23,7 +23,7 @@ class IonSelectSearchDirective {
     createInputElement() {
         let input = document.createElement('Input');
         // input.focus(); //Set the focus to the Input Element
-        input.setAttribute('placeholder', this.elementRef.getAttribute('searchPlaceholder') : this.elementRef.getAttribute('searchPlaceholder') ? 'Search');
+        input.setAttribute('placeholder', this.elementRef.getAttribute('searchPlaceholder') ? this.elementRef.getAttribute('searchPlaceholder') : 'Search');
         input.id = "i_s_searchInput";
         input.style.padding = "0.5em 1em";
         input.style.border = "unset";
