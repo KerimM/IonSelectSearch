@@ -16,7 +16,8 @@ Run `npm i ionic-select-search --save` to install this library.
 After installing this package with `npm i ionic-select-search --save`, import the IonSelectSearchLibModule in your main module(app.module.ts) or your lazy-loaded module.
 Eg: inside home.module.ts:
 
-`    import { IonSelectSearchLibModule } from 'ion-select-search';
+`    
+    import { IonSelectSearchLibModule } from 'ionic-select-search';
 
     @NgModule({
       ...
